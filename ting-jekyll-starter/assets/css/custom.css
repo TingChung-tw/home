@@ -1,0 +1,24 @@
+/* Custom tweaks on top of Minimal Mistakes dark */
+.tc-dark .page__content, .tc-dark, body.tc-dark {
+  background: #0E0E0E !important;
+  color: #EDEDED;
+}
+a { color: #EDEDED; }
+a:hover { opacity: .85; }
+
+.tc-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.tc-topic {
+  display:block; background:#171717; padding:16px; border-radius:10px; text-decoration:none;
+  color:#EDEDED;
+}
+.tc-featured { background:#111111; padding:20px; border-radius:12px; }
+
+.tc-card-center .page__lead, .tc-card-center .archive__subtitle { text-align:center; }
+.tc-card-links { text-align:center; margin-top: 24px; }
+.tc-card-links .btn { margin: 6px; }
+
+.page, .archive { max-width: 1040px; margin-left:auto; margin-right:auto; }

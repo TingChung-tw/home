@@ -1,0 +1,66 @@
+title: "Ting Chung"
+description: "Connecting Innovation and Governance, One Insight at a Time."
+url: "https://USERNAME.github.io"   # ← 把 USERNAME 改成你的 GitHub 帳號
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+
+minimal_mistakes_skin: "dark"
+locale: "zh-TW"
+search: true
+
+collections:
+  links:
+    output: true
+    permalink: /links/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      classes: "tc-dark"
+  - scope:
+      path: ""
+      type: "links"
+    values:
+      layout: single
+      author_profile: false
+      classes: "tc-dark"
+
+paginate: 6
+paginate_path: /page:num/
+
+author:
+  name: "Ting Chung"
+  avatar: /assets/images/avatar.png
+  bio: "At the intersection of defense technology, institutional resilience, and economic strategy."
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/"
+    - label: "Island Insight"
+      icon: "fas fa-link"
+      url: "https://islandinsight.substack.com/"
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
+logo: /assets/images/taiwan.png
+atom_feed:
+  hide: false
