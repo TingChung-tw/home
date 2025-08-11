@@ -1,17 +1,19 @@
 ---
 layout: home
-title: " "
+title: ""
 excerpt: "To remain an unsinkable island in a shifting world order."
 header:
   overlay_color: "#0E0E0E"
   overlay_filter: 0.0
-  overlay_image: {{ site.baseurl }}/assets/images/hero-bg.png
+  overlay_image: "{{ site.baseurl }}/assets/images/hero-bg.png"
   actions:
     - label: "Explore My Work"
       url: "#latest"
     - label: "Connect"
       url: "{{ site.baseurl }}/contact/"
 classes: "tc-dark"
+---
+
 ---
 
 <section id="latest">
